@@ -1,0 +1,274 @@
+.page {
+  min-height: 100vh;
+  background-color: black;
+  color: rgb(229, 231, 235);
+  padding-bottom: 4rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  padding: 2rem 0;
+  border-bottom: 1px solid rgb(39, 39, 42);
+  margin-bottom: 2rem;
+}
+
+.backButton {
+  color: rgb(156, 163, 175);
+  padding: 0;
+  margin-bottom: 1rem;
+  display: inline-flex;
+}
+
+.backButton:hover {
+  color: #ef4444;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #dc2626;
+}
+
+.emptyCart {
+  text-align: center;
+  padding: 4rem 0;
+  background-color: rgb(24, 24, 27);
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+}
+
+.emptyIcon {
+  width: 4rem;
+  height: 4rem;
+  color: rgb(156, 163, 175);
+  margin-bottom: 1.5rem;
+}
+
+.emptyCart h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.emptyCart p {
+  color: rgb(156, 163, 175);
+  margin-bottom: 1.5rem;
+}
+
+.shopButton {
+  background-color: #b91c1c;
+}
+
+.shopButton:hover {
+  background-color: #991b1b;
+}
+
+.cartContent {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.cartItems {
+  background-color: rgb(24, 24, 27);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.cartHeader {
+  display: none;
+  padding: 1rem;
+  background-color: rgb(39, 39, 42);
+  font-weight: 600;
+  color: rgb(156, 163, 175);
+}
+
+.cartItem {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1.5rem;
+  border-bottom: 1px solid rgb(39, 39, 42);
+  gap: 1rem;
+}
+
+.productInfo {
+  display: flex;
+  gap: 1rem;
+}
+
+.productImage {
+  flex-shrink: 0;
+}
+
+.image {
+  border-radius: 0.25rem;
+  object-fit: cover;
+}
+
+.productDetails {
+  flex-grow: 1;
+}
+
+.productName {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #ef4444;
+}
+
+.productDescription {
+  font-size: 0.875rem;
+  color: rgb(156, 163, 175);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.productPrice {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.quantityButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgb(39, 39, 42);
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quantityButton:hover {
+  background-color: #b91c1c;
+}
+
+.quantityIcon {
+  width: 14px;
+  height: 14px;
+}
+
+.quantity {
+  font-weight: 600;
+  min-width: 24px;
+  text-align: center;
+}
+
+.itemTotal {
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.removeButton {
+  background: none;
+  border: none;
+  color: rgb(156, 163, 175);
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.removeButton:hover {
+  color: #ef4444;
+}
+
+.removeIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.cartSummary {
+  background-color: rgb(24, 24, 27);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  height: fit-content;
+}
+
+.summaryTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #dc2626;
+}
+
+.summaryRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: rgb(156, 163, 175);
+}
+
+.summaryTotal {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: white;
+  border-top: 1px solid rgb(39, 39, 42);
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.checkoutButton {
+  width: 100%;
+  background-color: #b91c1c;
+  margin-top: 1.5rem;
+}
+
+.checkoutButton:hover {
+  background-color: #991b1b;
+}
+
+.clearButton {
+  width: 100%;
+  background: none;
+  border: none;
+  color: rgb(156, 163, 175);
+  margin-top: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.clearButton:hover {
+  color: #ef4444;
+}
+
+@media (min-width: 768px) {
+  .cartContent {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .cartHeader {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.5fr 1fr 0.5fr;
+  }
+
+  .cartItem {
+    grid-template-columns: 3fr 1fr 1.5fr 1fr 0.5fr;
+    gap: 0;
+    align-items: center;
+  }
+
+  .productPrice,
+  .itemTotal,
+  .quantityControls {
+    margin-top: 0;
+  }
+}

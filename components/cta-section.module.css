@@ -1,0 +1,40 @@
+.section {
+  padding: 4rem 0;
+  background-image: linear-gradient(to bottom, black, #7f1d1d);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  background-color: #b91c1c;
+  color: white;
+}
+
+.button:hover {
+  background-color: #991b1b;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.25rem;
+  }
+}

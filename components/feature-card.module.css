@@ -1,0 +1,23 @@
+.card {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgba(24, 24, 27, 0.5);
+  border-radius: 0.5rem;
+}
+
+.icon {
+  margin: 0 auto 1rem auto;
+  height: 3rem;
+  width: 3rem;
+  color: #ef4444;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: rgb(156, 163, 175);
+}

@@ -1,0 +1,81 @@
+.card {
+  background-color: rgb(39, 39, 42);
+  border-color: rgb(63, 63, 70);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+}
+
+.imageContainer {
+  position: relative;
+  height: 16rem;
+}
+
+.image {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.content {
+  padding: 1.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ef4444;
+}
+
+.price {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.description {
+  color: rgb(156, 163, 175);
+  margin-bottom: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  display: flex;
+}
+
+.star {
+  width: 1rem;
+  height: 1rem;
+  fill: #eab308;
+  color: #eab308;
+}
+
+.button {
+  background-color: #b91c1c;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  background-color: #991b1b;
+}
+
+.adding {
+  background-color: #059669;
+}
+
+.inCart {
+  background-color: #9f1239;
+}
